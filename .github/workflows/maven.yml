@@ -37,7 +37,7 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: ${{ secrets.DOCKER_USERNAME }}/\${{ env.DOCKER_IMAGE }}
+        image: ${{ secrets.DOCKER_USERNAME }}/${{ env.DOCKER_IMAGE }}
         tags: ${{ env.DOCKER_TAG }}
         registry: docker.io
         dockerfile: Dockerfile
