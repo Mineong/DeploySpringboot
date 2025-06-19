@@ -113,6 +113,8 @@
 				</configuration>
 			</plugin>
 		</plugins>
+
+		<finalName>springboot-reactjs-backend</finalName>
 	</build>
 
 </project>
